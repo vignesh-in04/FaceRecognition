@@ -19,8 +19,20 @@ Ensure having the following libraries installed:
 - Pillow (PIL)
 - winsound (Windows-specific)
 
-
 ## Key Components
 - Loading Images and Encoding Faces: The script loads images from the Images directory, converts them to RGB, and generates face encodings.
 - Real-Time Face Recognition: The system captures live video, detects faces, resizes and processes the images, and compares the encodings with known faces.
 - Logging Attendance: Recognized faces are logged with the current date and time in Recognized_Faces.csv.
+
+## Usage
+1. Add images to the `images` folder, with a separate subdirectory for each person
+2. Run the script: python FaceRecognition.py
+3. Press 'q' to quit the application
+
+## Configuration
+- Adjust the face distance threshold in the script if needed
+- Modify the `Mark_Attendance.csv` file format as required
+
+## License
+[MIT License](https://opensource.org/licenses/MIT)
+
